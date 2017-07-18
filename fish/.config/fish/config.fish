@@ -1,5 +1,7 @@
 set -gx fish_pager_color_progress cyan
 set -gx fish_color_command c397d8
+set -gx fish_color_autosuggestion 969896
+set -gx fish_color_quote b9ca4a
 
 alias fishconfig "vi ~/.config/fish/config.fish"
 
@@ -30,8 +32,9 @@ set -gx ANDROID_BUILD_TOOLS_DIR $ANDROID_HOME/build-tools
 # set -gx PYSPARK_DRIVER_PYTHON $ANACONDA_ROOT/bin/ipython3
 # set -gx PYSPARK_PYTHON $ANACONDA_ROOT/bin/python3
 
-set -gx PATH /Applications/Postgres.app/Contents/Versions/latest/bin /usr/local/sbin $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $ANDROID_BUILD_TOOLS_DIR/(ls -1 $ANDROID_BUILD_TOOLS_DIR) $PATH $ANACONDA_ROOT/bin
+set -gx PATH /Applications/Postgres.app/Contents/Versions/latest/bin /usr/local/sbin $ANDROID_HOME/tools $ANDROID_HOME/platform-tools $ANDROID_BUILD_TOOLS_DIR/(ls -1 $ANDROID_BUILD_TOOLS_DIR) $PATH $ANACONDA_ROOT/bin /opt/local/bin
 
 # rbenv
 # status --is-interactive; and source (rbenv init -|psub)
 
+thefuck --alias | source 
