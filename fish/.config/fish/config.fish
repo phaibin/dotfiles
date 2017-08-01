@@ -38,3 +38,4 @@ set -gx PATH /Applications/Postgres.app/Contents/Versions/latest/bin /usr/local/
 # status --is-interactive; and source (rbenv init -|psub)
 
 thefuck --alias | source 
+
