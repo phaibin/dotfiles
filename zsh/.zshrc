@@ -86,3 +86,5 @@ source $ZSH/oh-my-zsh.sh
 
 export http_proxy="http://localhost:8000"
 export https_proxy="http://localhost:8000"
+
+eval "$(rbenv init -)"
